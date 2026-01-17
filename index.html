@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/log.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fuentes.css">
+	<title>𝐸𝓈𝓂𝑒♡♡𝐼𝓈𝒶í</title>
+</head>
+<body>
+	<header class="encabezado">
+		<!--Esme & Isa-->
+		<img src="img/1.png" alt="Esme&Isa">
+	</header>
+	<video width="100%" autoplay muted loop>
+		<source src="img/inite.mp4" type="video/mp4">
+	</video>
+	<video width="100%" autoplay muted loop>
+		<source src="img/text.mp4" type="video/mp4">
+	</video>
+	<video width="100%" autoplay muted loop>
+		<source src="img/fecha.mp4" type="video/mp4">
+	</video>
+		
+	<img src="./img/m.png" alt="" width="50%" class="centrada">
+	<video width="100%" autoplay muted loop>
+		<source src="img/bann.mp4" type="video/mp4">
+	</video>
+
+<div class="contenedorCuenta">
+	 <h1>¡Estás invitado!</h1>
+    <h2>Nos encantaría que seas parte de este momento tan importante y especial para nosotros.</h2>
+    <h1>¡Falta poco!</h1>
+    <div class="reloj" id="contadorCuenta">
+
+        <div class="segmentoCuenta">
+            <span class="numeroCuenta" id="dias">00</span>
+            <span class="etiquetaCuenta">Días</span>
+        </div>
+        <div class="segmentoCuenta">
+            <span class="numeroCuenta" id="horas">00</span>
+            <span class="etiquetaCuenta">Horas</span>
+        </div>
+        <div class="segmentoCuenta">
+            <span class="numeroCuenta" id="minutos">00</span>
+            <span class="etiquetaCuenta">Minutos</span>
+        </div>
+        <div class="segmentoCuenta">
+            <span class="numeroCuenta" id="segundos">00</span>
+            <span class="etiquetaCuenta">Segundos</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    // fecha de destino
+    const fechaDestino = new Date("march 28, 2026 24:00:00").getTime();
+
+    const intervalo = setInterval(function() {
+        const ahora = new Date().getTime();
+        const distancia = fechaDestino - ahora;
+
+        // Cálculos matemáticos para días, horas, minutos y segundos
+        const d = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        const h = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        // Inyectar resultados en el HTML
+        document.getElementById("dias").innerText = d;
+        document.getElementById("horas").innerText = h;
+        document.getElementById("minutos").innerText = m;
+        document.getElementById("segundos").innerText = s;
+
+        // Si la cuenta llega a cero
+        if (distancia < 0) {
+            clearInterval(intervalo);
+            document.getElementById("contadorCuenta").innerHTML = "<h2>¡Hoy es la boda!</h2>";
+        }
+    }, 1000);
+</script>
+<br>
+  <div class="button">
+    <br>
+<br>
+
+	<video width="100%" autoplay muted loop>
+		<source src="img/ubicacion.mp4" type="video/mp4">
+	</video>
+	<div class="contenedor-botones">
+		<a href="https://maps.app.goo.gl/s9EgWcJch6QnjmLVA">
+        <button class="boton primario"><h2>♡♡ Dirección ceremonia ♡♡</h2></button></a>
+        <a href="https://maps.app.goo.gl/PGdonRKvxvNtdTMbA">
+        <button class="boton secundario"><h2>♡♡ Dirección recepción ♡♡</h2></button></a>
+    </div>
+
+	<div class="hero">
+		<h1>¡Te esperamos!</h1>
+	</div>
+		<h1> 0 2 : 0 0  p .  m . </h1>
+	<div class="container">
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="./img/a.png" alt="">
+			</div>
+			<h3 class="fecha"> El amor nunca deja de ser... </h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-down">
+				<img src="./img/b.png" alt="">
+			</div>
+			<h3 class="fecha">¡Graba mi nombre en tu corazón!</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-left">
+				<img src="./img/c.png" alt="">
+			</div>
+			<h3 class="fecha">¡Graba mi imagen en tu brazo!</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="./img/d.png" alt="">
+			</div>
+			<h3 class="fecha"> ¡Tan fuerte es el amor </h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-right">
+				<img src="./img/e.png" alt="">
+			</div>
+			<h3 class="fecha">como la muerte!</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="./img/f.png" alt="">
+			</div>
+			<h3 class="fecha">¡Tan cierta es la pasión</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-right">
+				<img src="./img/g.png" alt="">
+			</div>
+			<h3 class="fecha">como la tumba!</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="./img/h.png" alt="">
+			</div>
+			<h3 class="fecha">¡El fuego del amor es una llama</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-left">
+				<img src="./img/i.png" alt="">
+			</div>
+			<h3 class="fecha">que Dios mismo ha encendido!</h3>
+		</div>
+				<div class="evento">
+			<div class="foto" data-aos="fade-right">
+				<img src="./img/j.png" alt="">
+			</div>
+			<h3 class="fecha">Las muchas aguas no pueden apagar el amor,</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-left">
+				<img src="./img/k.png" alt="">
+			</div>
+			<h3 class="fecha">ni los ríos pueden ahogarlo...</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="./img/l.png" alt="">
+			</div>
+			<h3 class="fecha">Tres cosas durarán para siempre: la fe, la esperanza y el amor;</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="./img/m.png" alt="">
+			</div>
+			<h3 class="fecha">y la mayor de las tres es el amor.</h3>
+		</div>
+	</div>
+			<br><br>
+		<video width="100%" autoplay muted loop>
+			<source src="img/eyi.mp4" type="video/mp4">
+		</video>
+    <footer class="main-footer">
+           <p class="copy"> 2026 By Sara Pink | Todos los derechos reservados</p>
+       </footer>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 2000,
+			once: true
+		});
+	</script>
+</body>
+</html>
